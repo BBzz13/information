@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="zookeeper" />
+        <module name="springsecurity" />
+        <module name="spring_02_base_config" />
+        <module name="springmvc" />
+        <module name="spring_08_di_collection" />
+        <module name="spring_04_bean_lifecycle" />
+        <module name="spring_19_aop_pointcut" />
+        <module name="SpringCloud-naocs" />
+        <module name="spring_23_case_handle_password" />
+        <module name="spring_12_annotation_bean_manager" />
+        <module name="spring_06_di_constructor" />
+        <module name="common-data" />
+        <module name="mybatis-plus" />
+        <module name="elastic-job" />
+        <module name="common-util" />
+        <module name="redis" />
+        <module name="spring_03_bean_instance" />
+        <module name="spring_18_aop_quickstart" />
+        <module name="linux" />
+        <module name="spring_20_aop_advice_type" />
+        <module name="common-test" />
+        <module name="spring_05_di_set" />
+        <module name="spring_21_case_interface_run_speed" />
+        <module name="SpringCloud-eureka" />
+        <module name="rabbitmq" />
+        <module name="SpringCloud-gateway" />
+        <module name="spring_07_di_autoware" />
+        <module name="docker" />
+        <module name="java-parallel" />
+        <module name="Flink" />
+        <module name="spring-boot-user" />
+        <module name="spring_01_quickstart" />
+        <module name="nginx" />
+        <module name="spring_17_aop_demo" />
+        <module name="mongodb" />
+        <module name="myBatis-demo" />
+        <module name="git" />
+        <module name="spring_24_case_transfer" />
+        <module name="spring_25_case_transfer_log" />
+        <module name="jvm" />
+        <module name="spring_13_annotation_di" />
+        <module name="spring_15_spring_mybatis" />
+        <module name="spring_14_annotation_third_bean_manager" />
+        <module name="spring_16_spring_junit" />
+        <module name="spring-boot-consumer" />
+        <module name="spring_10_container" />
+        <module name="SpringCloud-config" />
+        <module name="maven" />
+        <module name="jenkins" />
+        <module name="spring_11_annotation_bean" />
+        <module name="common-job" />
+        <module name="spring_22_aop_advice_data" />
+        <module name="spring-springmvc" />
+        <module name="SpringCloud-zuul" />
+        <module name="mysql" />
+        <module name="itheima_ssm" />
+        <module name="spring-boot" />
+        <module name="spring_09_datasource" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common" target="1.8" />
+      <module name="common-data" target="1.8" />
+      <module name="common-job" target="1.8" />
+      <module name="common-test" target="1.8" />
+      <module name="common-util" target="1.8" />
+      <module name="docker" target="1.5" />
+      <module name="elastic-job" target="1.5" />
+      <module name="Flink" target="1.5" />
+      <module name="Futa" target="1.5" />
+      <module name="git" target="1.5" />
+      <module name="itheima_ssm" target="1.5" />
+      <module name="java-parallel" target="1.5" />
+      <module name="jenkins" target="1.5" />
+      <module name="jvm" target="1.5" />
+      <module name="linux" target="1.5" />
+      <module name="maven" target="1.5" />
+      <module name="middle" target="1.5" />
+      <module name="mongodb" target="1.5" />
+      <module name="mybatis" target="1.5" />
+      <module name="myBatis-demo" target="1.5" />
+      <module name="mybatis-plus" target="1.5" />
+      <module name="mysql" target="1.5" />
+      <module name="nginx" target="1.5" />
+      <module name="rabbitmq" target="1.5" />
+      <module name="redis" target="1.5" />
+      <module name="spring" target="1.5" />
+      <module name="spring-boot" target="1.8" />
+      <module name="spring-boot-consumer" target="1.5" />
+      <module name="spring-boot-user" target="1.5" />
+      <module name="spring-springmvc" target="1.5" />
+      <module name="spring_01_quickstart" target="1.5" />
+      <module name="spring_02_base_config" target="1.5" />
+      <module name="spring_03_bean_instance" target="1.5" />
+      <module name="spring_04_bean_lifecycle" target="1.5" />
+      <module name="spring_05_di_set" target="1.5" />
+      <module name="spring_06_di_constructor" target="1.5" />
+      <module name="spring_07_di_autoware" target="1.5" />
+      <module name="spring_08_di_collection" target="1.5" />
+      <module name="spring_09_datasource" target="1.5" />
+      <module name="spring_10_container" target="1.5" />
+      <module name="spring_11_annotation_bean" target="1.5" />
+      <module name="spring_12_annotation_bean_manager" target="1.5" />
+      <module name="spring_13_annotation_di" target="1.5" />
+      <module name="spring_14_annotation_third_bean_manager" target="1.5" />
+      <module name="spring_15_spring_mybatis" target="1.5" />
+      <module name="spring_16_spring_junit" target="1.5" />
+      <module name="spring_17_aop_demo" target="1.5" />
+      <module name="spring_18_aop_quickstart" target="1.5" />
+      <module name="spring_19_aop_pointcut" target="1.5" />
+      <module name="spring_20_aop_advice_type" target="1.5" />
+      <module name="spring_21_case_interface_run_speed" target="1.5" />
+      <module name="spring_22_aop_advice_data" target="1.5" />
+      <module name="spring_23_case_handle_password" target="1.5" />
+      <module name="spring_24_case_transfer" target="1.5" />
+      <module name="spring_25_case_transfer_log" target="1.5" />
+      <module name="SpringBoot" target="1.5" />
+      <module name="springcloud" target="1.5" />
+      <module name="SpringCloud-config" target="1.5" />
+      <module name="SpringCloud-eureka" target="1.5" />
+      <module name="SpringCloud-gateway" target="1.5" />
+      <module name="SpringCloud-naocs" target="1.5" />
+      <module name="SpringCloud-zuul" target="1.5" />
+      <module name="springmvc" target="1.5" />
+      <module name="springsecurity" target="1.5" />
+      <module name="SSM" target="1.5" />
+      <module name="zookeeper" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

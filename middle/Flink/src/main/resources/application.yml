@@ -1,0 +1,11 @@
+cdc:
+  datasource:
+    host: 192.168.2.12
+    port: 3306
+    database: alpha
+    database2: alpha
+    tableList: alpha.search_teacher,alpha.search_exhibition,alpha.search_teacher_thesis,alpha.search_instrument,
+      alpha.search_article,alpha.search_college,alpha.search_school
+    tableList2: alpha.alpha_article
+    username: root
+    password: Shufang_@919

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>Futa</artifactId>
+        <groupId>com.futa</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+    <artifactId>middle</artifactId>
+
+    <modules>
+        <module>mysql</module>
+        <module>redis</module>
+        <module>mongodb</module>
+        <module>rabbitmq</module>
+        <module>zookeeper</module>
+        <!--maven仓库-->
+        <module>maven</module>
+        <module>nginx</module>
+        <!--定时任务中间件-->
+        <module>elastic-job</module>
+        <!--其他中间件-->
+        <module>docker</module>
+        <module>git</module>
+        <module>jenkins</module>
+        <module>linux</module>
+        <module>Flink</module>
+        <module>jvm</module>
+        <module>java-parallel</module>
+    </modules>
+
+</project>

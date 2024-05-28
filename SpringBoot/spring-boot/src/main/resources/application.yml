@@ -1,0 +1,114 @@
+server:
+  port: 10086
+
+spring:
+  application:
+    name: spring-boot
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/ssm_db?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT
+      username: root
+      password: root
+      # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+      filter:
+        stat:
+          enabled: true
+          log-slow-sql: true
+          slow-sql-millis: 10000
+          merge-sql: false
+        wall:
+          config:
+            multi-statement-allow: true
+#      # 通过connectProperties属性来打开mergeSql功能；慢SQL记录 druid.stat.slowSqlMillis=0.5
+#      connection-properties: druid.stat.mergeSql=true;
+#      web-stat-filter:
+#        enabled: true         #是否启用StatFilter默认值false，用于采集 web-jdbc 关联监控的数据。
+#        url-pattern: /*
+#        exclusions: '*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*'
+#      stat-view-servlet:
+#        enabled: true #是否启用StatViewServlet（监控页面）默认值为false（考虑到安全问题默认并未启动，如需启用建议设置密码或白名单以保障安全）
+#        allow: ""
+#        url-pattern: /druid/*  #内置的监控页面地址，例如 /druid/*，则内置监控页面的首页是 /druid/index.html
+#        #是否允许清空统计数据
+#        reset-enable: false
+#        login-username: admin
+#        login-password: admin
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: itcast-default
+          contentType: text/plain
+#  elasticjob:
+#    # 分布式任务协调依赖zookeeper
+#    zookeeper:
+#      server-lists: 127.0.0.1:2181
+#      namespace: vtrace_job_dev
+    # 普通任务
+#    simples:
+#      TestJob:
+#        job-class: com.vonechain.vtrace.scheduler.job.CoreScanDaySummaryJob
+#        cron: 0 */1 * * * ?
+#        overwrite: true
+#        sharding-total-count: 1
+#        sharding-item-parameters: 0=service1,1=service2,2=service3
+#        monitorExecution: false
+#        #eventTraceRdbDataSource: dataSource
+#        failover: true
+#        disabled: false
+#        jobParameter: test
+#        description: CoreScanDaySummaryJob
+
+# mybatis-plus 配置
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*Mapper.xml,classpath:/mapper/**/*Mapper.xml
+  global-config:
+    # 大写命名,对表名和字段名均生效
+    capital-mode: true
+    # 是否打印 Logo banner
+    banner: true
+    db-config:
+      # 主键类型
+      # AUTO 数据库ID自增
+      id-type: auto
+      # 字段验证策略之 select,在 select 的时候的字段验证策略既 wrapper 根据内部 entity 生成的 where 条件
+      # IGNORED 忽略判断
+      # NOT_NULL 非NULL判断
+      # NOT_EMPTY 非空判断(只对字符串类型字段,其他类型字段依然为非NULL判断)
+      # DEFAULT 默认的,一般只用于注解里
+      # NEVER 不加入 SQL
+      select-strategy: not_empty
+      # 字段验证策略之 insert,在 insert 的时候的字段验证策略
+      insert-strategy: not_empty
+      # 字段验证策略之 update,在 update 的时候的字段验证策略
+      update-strategy: not_null
+  # 如果配置了该属性，SqlSessionFactoryBean 会把该包下面的类注册为对应的 TypeHandler
+  type-handlers-package:  com.vchain.framework.common.data.handler
+  configuration:
+    # 指定外部化 MyBatis Properties 配置，通过该配置可以抽离配置，实现不同环境的配置部署
+    jdbc-type-for-null: 'null'
+    #在一般查询中，如果用map接受查询结果时，会自动将查询结果为null的字段忽略，这样就造成取参数时报空指针异常的情况。
+    #如果设置了这条属性之后，mybatis就不会忽略这些字段，你依然能get到这些key，只不过value为null，这样也方便。
+    #1.如果整个查询的所有字段都没有值，就是查询到0条记录时，那么接受到的map是什么结果？
+    #答案是，我们会接收到一个所有key值都为null 的map 而不是一个为null的map。
+    #2.如果只查询一个字段，而用map接收，此时为null是什么结果？
+    #答案是，我们会接收到一个为null的map，跟上面情况正好相反
+    #call-setters-on-nulls: true
+
+
+
+#        commons-log:
+#        connection-logger-name: stat,wall,log4j
+#      stat-view-servlet:
+#        enabled: true
+#        allow: ""
+#mybatis-plus:
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#        url-pattern: /druid/*
